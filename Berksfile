@@ -9,8 +9,10 @@ cookbook 'php-redis', '~> 0.1.1'
 cookbook 'nodejs', '~> 3.0.0'
 cookbook 'composer', '~> 2.5.2'
 cookbook 'ntp', '~> 3.3.0'
-
 cookbook 'application', '~> 5.1.0'
-cookbook 'poise', '~> 2.7.1'
+cookbook 'application_git', '~> 1.1.0'
+
+cookbook 'phpenv', path: 'local_cookbooks/phpenv'
+cookbook 'homesync-app-deploy', path: 'local_cookbooks/homesync-app-deploy'
 
 metadata
