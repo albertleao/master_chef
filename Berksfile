@@ -13,6 +13,7 @@ cookbook 'application', '~> 5.1.0'
 cookbook 'application_git', '~> 1.1.0'
 
 cookbook 'phpenv', path: 'local_cookbooks/phpenv'
-cookbook 'homesync-app-deploy', path: 'local_cookbooks/homesync-app-deploy'
+cookbook 'nodejsenv', path: 'local_cookbooks/nodejsenv'
+cookbook 'homesync-php-app', path: 'local_cookbooks/homesync-php-app'
 
 metadata
