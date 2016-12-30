@@ -34,10 +34,10 @@ search("aws_opsworks_app").each do |app|
        docroot "/srv/www/#{app['shortname']}/#{app['attributes']['document_root']}"
        env_vars app['environment']
        template 'web_app.conf.erb'
+
+       apache_module "mpm-event" do
+        conf false
+      end
     end
   end
-end
-
-service "apache2" do
-  action :restart
 end
