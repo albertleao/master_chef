@@ -1,5 +1,6 @@
 search("aws_opsworks_app").each do |app|
-  if app['deploy'] == false do
+  if app['deploy'] == true
+    Chef::Log.info("********** #{app['shortname']} is being undeployed **********")
     directory "/srv/www/#{app['shortname']}" do
       recursive true
       action :delete
