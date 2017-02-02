@@ -15,5 +15,5 @@ end
 execute "restart_server" do
   action :nothing
   user "root"
-  command "service apache2 restart"
+  command "service apache2 graceful"
 end
